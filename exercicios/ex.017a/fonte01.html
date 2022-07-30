@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+            /*
+            Medidas Absolutas:
+             cm, mm, in, px, pt, pc;
+            
+            Medidas Relativas: 
+             em, ex, rem, vh, %; */
+             /* A W3C recomenda usar 'em' ou 'px'. */
+             /* 16px geralmente = 1em */
+
+            font-size: 1em; 
+            font-weight: bold;
+            /* lighter, normal, bold, bolder */
+            /* variação numérica: 100-900 */
+            font-style: italic;
+            text-decoration: underline;
+
+        }
+        h1 {
+            font-family: 'Work Sans', sans-serif ;
+            font-weight: bold;
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font: uma 'mãozinha' para facilitar essas configurações acima */
+            /* font-style, font-weight, font-size, font-family */
+
+        }
+        h2 {
+            /* Mesma configuração de 'h1' com shorthand */
+            font: italic bold 3em 'Work Sans', sans-serif; 
+
+            /* Você pode retirar uma referencia, porem as outras devem seguir a mesma ordem, senão dará erro. */
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis nihil, debitis cupiditate perferendis a aliquam, molestias non eius possimus hic, quos odit. Officiis distinctio excepturi quis, vitae quidem atque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad omnis debitis eveniet odio. Temporibus nostrum praesentium dolores tempore unde reiciendis possimus, reprehenderit corrupti aliquam libero voluptatem! Iusto officiis beatae blanditiis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident fugit nihil cumque iusto ratione vitae tempora placeat. Doloremque aspernatur laborum eaque, nobis nesciunt facilis explicabo unde nulla beatae illo.</p>
+
+    <h2>Subtitulo do Exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus numquam voluptatum, est autem fuga voluptates eius repellendus et aut, officiis facilis atque. Sint error, dignissimos fuga cupiditate ipsa minus veritatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, saepe omnis voluptate perferendis libero quas quaerat iusto fugiat, sint vel perspiciatis suscipit dignissimos rerum? Non magnam natus nulla sint aliquid.</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Videos no meu Site.</h1>
+    <p>Esse video está hospedado no meu próprio servidor:</p>
+
+    <h2>Maneira simples, (video sem as 'sources'):</h2>
+    
+    <video src="midia/video2.mp4" width="500" controls>"</video>
+    <!-- src='link para seu video', width='Tamanho que ele ocupar-a na tela do navegador', controls='inclui um painel de comandos no seu video.'-->
+
+    <h2>Maneira completa, (video com as 'sources'):</h2>
+    <video width="500" poster="imagem-poster/boris.png" controls>
+        <!-- poster='link para uma imagem que ficará na proteçãoi de tela do seu video. Use imagens pequenas em formato png.'-->
+        <source src="midia/video1.1.m4v" type="video/mp4">
+        <source src="midia/video1.mp4" type="video/mp4">
+        <source src="midia/video2.1.mkv" type="video/mkv">
+        <!-- A ordem das 'sources' é importante. O primeiro que você colocar será o link principal, ou seja, será o primeiro que o navegador tentará reproduzir. Não conseguindo, ele tentará o prox.-->
+        <!-- Você pode incluir quantos sources quiser.-->
+
+        <p>Seu navegador não possui compatibilidade com reprodução de videos.</p>
+        <!-- Esse parágrafo só aparecerá caso nenhuma das opções de video rodar no browser.-->
+
+    </video>
+
+    <h1>Incorporando Videos Externos.</h1>
+    <h2>Videos do YouTube:</h2>
+    <!-- No YouTube, vá em 'Compartilhar', 'Incorporar' e 'Copiar'. Aqui no VS Code, basta dar um Ctrl+V-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Videos do Vimeo.com:</h2>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&autoplay=1&loop=1&color=c9ff23&title=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    
+
+</body>
+</html>

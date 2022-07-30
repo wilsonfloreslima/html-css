@@ -1,0 +1,22 @@
+@charset "UTF-8"; 
+
+body {
+     background-color: goldenrod;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+}
+
+h1 {
+    background-color: cyan;
+    color: mediumblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    background-color: cyan;
+    color: darkred;
+}
+
+p {
+    background-color: darksalmon;
+}

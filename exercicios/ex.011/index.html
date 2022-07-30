@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica.</h1>
+    <p>Tente abrir esse site em dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Esse source diz: se a imagem tiver até 700px, o browser carregará a imagem P.-->
+        <!-- No campo 'srcset' colocaremos o endereço da imagem a ser carregada. Lembrando q estão todas na pasta do ex.011-->
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+        <!-- Esse source diz: se a imagem tiver até 1000 px, o browser carregará a imagem M.-->
+        <!-- em 'max-width' deixei 50px de folga para a barra de rolagens não aparecer no browser.-->  
+
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+        <!-- Em 'img src' Você define qual será a imagem padrão. Ela será a sua base.-->
+        <!-- Nesse ex, a ordem dos sources é fundamental, pois o programa usará uma hierarquia. A base será o maior arquivo, se o browser for menor, a imagem será a media, e se for menor ainda, ai a imagem carregada será a P.-->
+
+    </picture>
+    <!--  a tag 'picture' é o local onde alocamos imagens dinâmicas.-->
+
+    <p>Sempre favoreça o usuario final. Sempre.</p>
+
+    <h1>Reproduzindo audios.</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5. <br> Existem duas maneiras: </p>
+    <p>Tag 'audio' sem as 'sources':</p>
+    <audio src="midia/Higher Octane - Vans in Japan.mp3" controls autoplay></audio>
+    <!-- Em src="" selecionamos o arquivo de audio desejado; 'autoplay' fará o audio tocar automaticamente, isso vai depender da compatibilidade do navegador, e 'controls' exibe um painel de controles do audio na suia pagina web.-->
+    <!-- A tag audio é compativel com os formatos mp3, WAV e OGG.--> 
+
+    <p> Com a tag 'audio usando as sources 'dentro':</p>
+    <audio preload="metadata" autoplay controls loop>
+        <!-- Nesse caso, a ordem das 'sources' faz diferença. O browser vai tentar reproduzir os audios na ordem que elas estiverem no programa, de cima pra baixo. Evite usar audios em formato WAV, pois são muito pesados. O ideal é começar com formatos mp3.-->
+        <source src="midia/Late Night Train - Vans in Japan.mp3" type="audio/mpeg">
+        <!-- o src vai ser o link da midia e type é a 'media type' do arquivo. Você encontra todos eles no material disponivel no GitHub do Guanabara.-->
+        <source src="midia/Late Night Train - Vans in Japan.ogg" type="audio/ogg">
+        <source src="midia/Late Night Train - Vans in Japan.wav" type="audio/wav">
+        <!-- Cada source será responsavel por um formato diferente.--> 
+
+        <p>Caso o seu navegador não seja compativel, <a href="midia/Late Night Train - Vans in Japan.mp3">clique aqui</a> para o download do audio.</p>
+        <!--  Nesse ultimo 'p' deixamos a opção para baixar o audio, caso o browser não seja compativel com nenhum dos formatos disponiveis. Se algum for compativel, essa parte não aparecerá.-->
+        
+    </audio>
+
+</body>
+</html>

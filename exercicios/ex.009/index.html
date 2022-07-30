@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Listas.</title>
+</head>
+<body>
+    <h1>Tipos de Listas.</h1>
+    <h2>Listas Ordenadas:</h2> 
+    <!-- A ordem faz diferença.-->
+    <ol> <!-- Listas Ordenadas-->
+        <li>Acordar</li>
+        <li>Desligar o soneca</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Mijar</li>
+        <li>Se trocar</li>
+        <!-- Nas listas, vocẽ não precisa numerar os itens. Basta usar o 'li' antes de cada um-->
+        <!-- A tag 'li' não precisa do fechamento </li> a partir do HTML5.-->
+    </ol>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Desligar o soneca</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Mijar</li>
+        <li>Se trocar</li>
+        <!-- O comando 'type' serve para formatar o tipo de listagem, se vai ser de numeros, letras ou caracteres-->
+    </ol>
+    <h2>Listas Não Ordenadas:</h2>
+    <!-- Listas que não precisam estar em ordem. -->
+    <ul> <!-- Listas não ordenadas.-->
+        <li>Comprar carne.</li>
+        <li>Manteiga</li>
+        <li>Refrigerante</li>
+        <li>Salgadinho</li>
+        <li>Arroz</li>
+    </ul>
+    <ul type="circle">
+        <!-- o 'type' nas listas não ordenadas não dão opções. As unicas são 'disk', 'circle', e 'square'-->
+        <li>Comprar carne.</li>
+        <li>Manteiga</li>
+        <li>Refrigerante</li>
+        <li>Salgadinho</li>
+        <li>Arroz</li>
+    </ul>
+    <ul type="square">
+        <li>Comprar carne.</li>
+        <li>Manteiga</li>
+        <li>Refrigerante</li>
+        <li>Salgadinho</li>
+        <li>Arroz</li>
+    </ul>
+
+    <h1>Listas dentro de listas:</h1>
+    <!-- É possivel gerar listas dentro de listas, sendo ordenada a lista principal e não ordenada as sub listas.-->
+    <h2>Minhas linguagens favoritas:</h2>
+    <ol>
+        <li>Antigas:</li> <!-- dentro de uma 'li', abrimos uma 'ol'-->
+        <ol type="a">
+            <li>C</li>
+            <li>Delphi</li>
+            <li>Pascal</li>
+        </ol>
+        <li>Novas:</li>
+        <ol type="a" start=4> <!-- Esse 'start' serve para que as listas sejam continuas, mas é preciso dizer em qual elento ela iniciará. No caso ai, no 4.-->
+            <li>Php</li>
+            <li>HTML</li>
+            <li>Phyton</li>
+            <li>SQL</li>
+        </ol>
+    </ol>
+    <h2>Meus Jogos Favoritos:</h2>
+    <!-- Listas dentro de listas. Criação de listas e sub listas-->
+    <ol type="A">
+        <li>Nes</li>
+            <ul type="disk">
+                <li>Mario</li>
+                    <ul>
+                        <li>Mario 2</li>
+                        <li>Mario 3</li>
+                    </ul>
+                <li>Wacky Races</li>
+            </ul>
+        <li>Mega Drive</li>
+            <ul>
+                <li>Sonic</li>
+                    <ul>
+                        <li>Sonic 2</li>
+                        <li>Sonic 3</li>
+                    </ul>
+
+                <li>Mortal Kombat</li>
+                    <ul>
+                        <li>Mortal 2</li>
+                        <li>Mortal 3</li>
+                    </ul>
+            </ul>
+        <li>N64</li>
+            <ol type="I">
+                <li>Mario</li>
+                <li>Zelda</li>
+                <li>Internacional Soccer</li>
+            </ol>
+        <li>Playstation</li>
+            <ul type="circle">
+                <li>Resident Evil</li>
+                    <ul type="square">
+                        <li>Resident 1</li>
+                        <li>Resident 2</li>
+                        <li>Resident 3</li>
+                    </ul>
+                <li>Tomb Raider</li>
+                    <ul type="circle">
+                        <li>Tomb 1</li>
+                        <li>Tomb 2</li>
+                        <li>Tomb 5</li>
+                    </ul>
+                <li>Winning Eleven</li>
+            </ul>
+    </ol>
+    <!-- Cuidado para não se perder!!!!-->
+
+<h2>Lista de definições:</h2>
+    <!-- A tag 'dl' cria uma lista de definições.-->
+    <!-- A tag 'dt' é o termo-->
+    <!-- A tag 'dd' é a definição do termo.-->
+    <dl>
+        <dt>HTML.</dt>
+        <dd>Linguagem de marcação para desenvolvimento web</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criar interatividade em um site.</dd>
+
+        <!-- AS LISTAS DE DEFINIÇÃO SÃO MUITO FAVORECIDAS POR SITES DE BUSCA. ESSE TIPO DE LISTA VALORIZA O SEU SITE WEB.-->
+    </dl>
+</body>
+</html>

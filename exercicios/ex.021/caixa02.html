@@ -1,0 +1,110 @@
+'                                                           <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(13, 153, 24);
+            margin: 0px; /* cabeçalho de lado a lado */
+        }
+        h1 {
+            /* sombras internas (inset) */
+            /* configuradas com auxilio do DevTools */
+            box-shadow: inset -1px 2px 5px 2px rgb(0 0 0 / 35%);
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 12px 13px 10px;
+            /* configuração de borda em 4 partes */
+        }
+        /* nav = navegador */
+        nav {
+            background-color: rgb(23, 202, 23);
+            padding: 3px;
+            /* conf da shadow: 
+            desl horizontal
+            desl vertical 
+            espalhamento 
+            cor       
+            */
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+        }
+        /* links do nav */
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        /* quando passar o mouse sobre nav*/
+        nav > a:hover {
+            text-decoration: underline;
+
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 1px 40px; 
+            /* configuração de bordas */
+            box-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(136, 134, 134)
+
+        }
+        footer {
+            background-color:black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        /* paragrafo do rodapé */
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head> <!-- cabeça - conf. principais -->
+<body>
+    <header> <!-- cabeçalho -->
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+        </nav>
+    </header>
+    <main> <!-- conteudo principal -->
+        <section id="assuntos">
+            <h2>Assunto Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minima non officiis, quaerat possimus, nobis culpa quia nisi impedit excepturi optio repudiandae, labore itaque voluptatibus? Ab ea assumenda eligendi sed!</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil<h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum et blanditiis, quasi quisquam sint officiis ducimus soluta assumenda voluptas! Animi veritatis aspernatur repellendus culpa nihil. Consectetur dolorem nobis esse aperiam!</p>
+                <aside>
+                    <p>Artigo escrito por mim mesmo.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- rodapé -->
+        <p>Desenvolvido por Wilson Lima, Janeiro 2022.</p>
+    </footer>
+</body>
+</html>

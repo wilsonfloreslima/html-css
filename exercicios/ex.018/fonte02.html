@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'Blade';
+        src: url('fonts/Blades.otf') format('opentype'), url('fonts/Blades.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+
+        /*
+           font-face: Você pode dar um nome qualquer para a fonte, mas ele precisa ser o mesmo em todas as 'font family'.
+
+           url e format: Você precisa digitar o nome dos arquyivos ttf e otf, sempre entre aspas. O mesmo vale para os tipos de format.
+
+          Tipos de format():
+            *opentype(otf)
+            *truetype(ttf)
+            *embedded-opentype
+            *truetype-aat (Apple Advanced Typography)
+            *svg
+        */
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+    }
+    h1 {
+        font-family: 'Blade', 'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+</style>
+<body>
+     <h1>Título</h1>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eum facilis repellat ut adipisci incidunt, quos possimus id porro amet harum quis debitis sapiente doloremque ex quas modi mollitia omnis?</p>
+
+     <h1>Hello, world!!!!</h1>
+
+</body>
+</html>

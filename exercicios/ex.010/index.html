@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links.</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <!-- Links que te levaram para outras paginas.-->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório publico no GitHub</a></p>
+    <!-- A tag 'a' (ancora) significa que o que esta envelopado será um link-->
+    <!-- O 'href="link" '' é onde vocễ colocará o link desejado.-->
+    <!-- As tags 'target="_blank" ' e 'rel="external" ' é que indicarão que esse é um link externo, ou seja, quando clicado, abrirá em uma outra aba do browser e não irá sobrepor o seu site.-->
+
+    <p>Você tambem pode acessar o meu <a href="https://youtube.com/cursoemvideo/">canal grátuito no Youtube</a>.</p>
+    <!-- Aqui não coloquei as tags referentes a um link exterto exatamente para ver a diferença no exercicio. -->
+    <h2>Usando links internos:</h2>
+    <!-- Antes de criar links internos, você deve criar outras paginas ou pastas.-->
+    <p>Essa é a minha pagina principal. Se vpocê quiser acessar a próxima, <a href="pagoo2.html" rel="next">clique aqui</a>.</p>
+    <!-- Aqui você pode usar o atalho Ctrl=space dentro de href" aqui ". Ele te ajudará com a lista de paginas disponiveis.-->
+
+    <h1>Downloads de livros:</h1>
+    <!-- Aqui usaremos as litas ul-->
+    <!-- Na tag 'href' você colocara o link do arquivo a ser baixado.-->
+    <!-- Na tag 'download' você cooca o nome do arquivo a ser baixado. (Ctrl+space)-->
+    <!-- A tag 'type' coloca o tipo de media type, caso o navegadore não faça o download só no clique. Consultar o site 'iana.org'-->
+    <ul>
+        <li><a href="livros/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Livro em pdf.</a></li>
+        <li><a href="livros/meulivrocompac.tar.gz" download="meulivrocompac.tar.gz" type="application/zip">Livro compactado em zip.</a></li>
+    </ul>
+
+</body>
+</html>

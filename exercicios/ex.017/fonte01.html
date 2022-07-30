@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            /* Aqui você coloca as opções de fontes que o navegador vai usar, na ordem de prioridade. */
+            /* É possivel que alguns navegadores nçao tenham algumas fontes, por isso usamos familias de fontes. */
+            font-family: Arial, Helvetica, sans-serif;
+
+            /*Medidas Absolutas:
+             cm, mm, in, px, pt, pc;
+            
+            Medidas Relativas: 
+             em, ex, rem, vh, %; */
+             /* A W3C recomenda usar 'em' ou 'px'. */
+             /* 16px geralmente = 1em */
+
+            font-size: 1.5em; 
+            /* não pode haver espaço entre o num e a unidade*/
+        }
+
+        /* Como vamos usar a mesma familia de fontes para 'h1' e 'h2', podemos fazer dessa forma na CSS */
+        h1, h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* font-family: "LEMBRAR DO ATALHO Ctrl + Space"; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis nihil, debitis cupiditate perferendis a aliquam, molestias non eius possimus hic, quos odit. Officiis distinctio excepturi quis, vitae quidem atque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad omnis debitis eveniet odio. Temporibus nostrum praesentium dolores tempore unde reiciendis possimus, reprehenderit corrupti aliquam libero voluptatem! Iusto officiis beatae blanditiis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident fugit nihil cumque iusto ratione vitae tempora placeat. Doloremque aspernatur laborum eaque, nobis nesciunt facilis explicabo unde nulla beatae illo.</p>
+
+    <h2>Subtitulo do Exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus numquam voluptatum, est autem fuga voluptates eius repellendus et aut, officiis facilis atque. Sint error, dignissimos fuga cupiditate ipsa minus veritatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, saepe omnis voluptate perferendis libero quas quaerat iusto fugiat, sint vel perspiciatis suscipit dignissimos rerum? Non magnam natus nulla sint aliquid.</p>
+</body>
+</html>
