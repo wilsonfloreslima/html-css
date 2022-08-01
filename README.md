@@ -1,2 +1,2 @@
-# html-css
- Curso de HTML5 & CSS3 do Curso em Video
+# javascript
+ Curso de javascript do Curso em Video
