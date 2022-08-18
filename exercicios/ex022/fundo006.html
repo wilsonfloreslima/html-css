@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Fundo</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
+            /*
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-             background-position: center center;
-             background-repeat: repeat-y;
-             background-size: cover;
+            background-position: center center;
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-attachment: fixed;
+            */
 
-             /*
-                 com o 'background-size' você pode configurar a exibição da imagem de fundo.
-                'cover' =  preenche ao tamanho da tela, porem ainda terá alguns cortes. 
+            background-size: cover;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            /* 
+                SHORT-HAND:
+                background: color > image > position > repeat > [size] > attachment
+                
+            */
+
+            /*
+                'background-size' = configura a exibição da imagem de fundo.
+                'cover' = preenche ao tamanho da tela, porem ainda terá alguns cortes.
+                'background-fixed' = combinado com o 'cover', mantem a imagem de fundo fixa, sem rolar junto com o scroll  
             */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -34,7 +46,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officia asperiores mollitia sed eligendi error sapiente numquam est, reiciendis dolor eius exercitationem vel. Aperiam, ex soluta. Quisquam pariatur maiores iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quisquam accusamus, libero aut maxime velit provident quas blanditiis eveniet animi asperiores, nulla saepe voluptates repellendus ipsam magni possimus dolor incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officia asperiores mollitia sed eligendi error sapiente numquam est, reiciendis dolor eius exercitationem vel. Aperiam, ex soluta. Quisquam pariatur maiores iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quisquam accusamus, libero aut maxime velit provident quas blanditiis eveniet animi asperiores, nulla saepe voluptates repellendus ipsam magni possimus dolor incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officia asperiores mollitia sed eligendi error sapiente numquam est, reiciendis dolor eius exercitationem vel. Aperiam, ex soluta. Quisquam pariatur maiores iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quisquam accusamus, libero aut maxime velit provident quas blanditiis eveniet animi asperiores, nulla saepe voluptates repellendus ipsam magni possimus dolor incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae obcaecati modi in quibusdam nostrum, ullam sapiente assumenda voluptatibus laudantium ipsa omnis quia. Aspernatur nulla maiores doloremque aut modi debitis?
         </p>
     </main>
 </body>
