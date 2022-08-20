@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    /* configurações globais */
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /* tam min do corpo = 100% da viewport */
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /* fontes maiúsculas com estilo */
+
+}
+
+header p {
+    padding-bottom: 50px;
+
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+header a:hover, footer a:hover {
+    color: brown;
+    text-decoration: underline;
+
+}
+
+section {
+    /* configurações gerais */
+
+    padding-top: 10vh; /* 10% da viewport no topo */
+    padding-bottom: 10vh; /* 10% da viewport na base */
+    line-height: 2em; /* distância entre linhas */
+    padding-left: 30px; /* distância do texto para a lat esq.*/
+
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+
+}
+
+section.imagem p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.342);
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
