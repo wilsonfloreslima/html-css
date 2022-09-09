@@ -23,9 +23,28 @@
 
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: lightgray;
+
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
+
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+            /*
+                nth-child(*n) = efeito zebrado, o valor no lugar de * define o num de linhas a serem puladas.
+                nth-child(odd) = efeito nas linhas impares.
+                nth-child(even) = efeito nas linhas pares.
+
+            */
 
         }
 
@@ -39,7 +58,8 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!--
         Anatomia para tabelas grandes:
-         Table
+          Table
+            Caption = legenda/título da tabela 
             thead = cabeçalho de tabela
                 tr, td, th
 
@@ -51,10 +71,11 @@
 
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -94,11 +115,83 @@
                 <td>Pará</td>
                 <td class="num">7 581 051</td>
             </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6 248 436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 003 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 574 789</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 483 985</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 514 952</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 766 528</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">450 479</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 168 027</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 120 494</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 118 360</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 570 160</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 449 024</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 068 017</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 562 409</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 383 445</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">733 559</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">669 526</td>
+            </tr>
             	
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
-            <td class="num"><strong>0000</strong></td>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>210 147 126</strong></td>
         </tfoot>
 
     </table>
